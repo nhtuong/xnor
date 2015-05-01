@@ -22,7 +22,7 @@ Schemas.Comments = new SimpleSchema
 
 	content:
 		type: String
-		label: 'Comment'
+		label: 'Ask'
 
 
 Comments.attachSchema(Schemas.Comments)

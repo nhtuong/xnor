@@ -21,13 +21,13 @@
 
 	socialMedia:
 		facebook:
-			url: 'https://www.facebook.com/pages/Xnor/551086105032381'
+			url: '#'
 			icon: 'facebook'
 		twitter:
-			url: 'https://twitter.com/ETE_Xnor'
+			url: '#'
 			icon: 'twitter'
 		github:
-			url: 'https://github.com/nhtuong/xnor'
+			url: '#'
 			icon: 'github'
 		info:
 			url: 'http://ete-edu.com/'

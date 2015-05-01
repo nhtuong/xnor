@@ -3,13 +3,31 @@
 Schemas.Posts = new SimpleSchema
 	title:
 		type:String
+		label: 'Title'
 		max: 60
+		
+	organization:
+		type:String
+		label: 'Organization'
+		max: 60		
 
 	content:
 		type: String
+		label: 'Description'
 		autoform:
 			rows: 5
-
+			
+	video:
+		type: String
+		label: 'Video'
+		max: 60
+		
+	widget:
+		type: String
+		label: 'Widget'
+		autoform:
+			rows: 3
+		
 	createdAt: 
 		type: Date
 		autoValue: ->

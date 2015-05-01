@@ -16,6 +16,8 @@
 			auxCollections: ['Posts']
 			tableColumns: [
               {label: 'Content';name:'content'}
+              {label: 'Video';name:'video'}
+              {label: 'Widget';name:'widget'}
               {label:'Post';name:'doc',collection: 'Posts',collection_property:'title'}
               {label:'User',name:'owner',collection:'Users'}
             ]
