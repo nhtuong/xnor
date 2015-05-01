@@ -1,0 +1,76 @@
+{
+
+	/*Config*/
+	"configName": "ETE :: Xnor",
+	"configTitle": "Welcome to",
+	"configSubtitle": " ETE Personalized e-Training Platform!",
+	
+	/*Home*/
+	"getstarted": "Get Started",
+	"dashboard": "Go to dashboard",
+	"learn": "Learn more",
+	"intro": " ETE (Equality with Technologies for Education)",
+	"how": "How It Works",
+	"step_1": "Step 1",
+	"step_1_text": "Create an account with Xnor",
+	"step_2": "Step 2",
+	"step_2_text": "Go to ETE-EDU.COM to choose your courses.",
+	"step_3": "Step 3",
+	"step_3_text": "Learn and share your experiences with Xnor",
+	"section_ipad_header": "Education for everyone",
+	"section_ipad_text": "Interact with your peers as in real class",
+	"section_ipad_btn": "Browse courses",
+	"final_text": "Your campus starts here.",
+	"final_cta": "Register now",
+
+	/*Shared*/
+
+	"favorite": "Favorite",
+
+	 /*Navbar*/
+	"admin": "Admin",
+	"profile": "Profile",
+	"account": "Account",
+	"signout": "Sign out",
+	"signup": "Sign up",
+	"login": "Log in",
+	"login2": "Login",
+	"edit_profile": "Edit Profile",
+
+	/*Not Found*/
+	"not_found": "Nothing here.",
+
+
+	/*Dashboard*/
+	"add_post": "Add a course",
+	"add_post_btn": "Add course",
+	"add_post_modal": "Add with a modal",
+	"add_post_modal_btn": "Add a new course",
+	"edit_post": "Edit course",
+	"delete": "Delete",
+	"favorites": "Favorites",
+
+	/*Account*/
+	"account_details": "Account Details",
+	"delete_account": "Delete Account",
+	"delete_account_warn": "There's no coming back from this one",
+	"delete_account_warn2": "Are you sure you want to delete your account?",
+	"close": "Close",
+	"change_pswd": "Change Password",
+
+	/*Profile*/
+	"update": "Update",
+
+	/*Posts*/
+
+	"postTitle": "Title",
+	"postContent": "Description",
+	"postPicture": "Picture",
+	// "uploadLabel": "Choose File"
+	"profilePicture": "Profile Picture"
+
+
+	
+
+
+}
