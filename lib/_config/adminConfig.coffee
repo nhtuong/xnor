@@ -1,24 +1,25 @@
 @AdminConfig =
 	name: Config.name
 	collections : 
-		Posts: {
+		Courses: {
 			color: 'red'
 			icon: 'pencil'
 			auxCollections: ['Attachments']
 			tableColumns: [
               {label: 'Title',name:'title'}
+              {label: 'Organization';name:'organization'}
+              {label: 'Video';name:'video'}
               {label:'User',name:'owner',collection:'Users'}
             ]
 		}
-		Comments: {
+		Asks: {
 			color: 'green'
 			icon: 'comments'
-			auxCollections: ['Posts']
+			auxCollections: ['Courses']
 			tableColumns: [
               {label: 'Content';name:'content'}
-              {label: 'Video';name:'video'}
-              {label: 'Widget';name:'widget'}
-              {label:'Post';name:'doc',collection: 'Posts',collection_property:'title'}
+
+              {label:'Course';name:'doc',collection: 'Courses',collection_property:'title'}
               {label:'User',name:'owner',collection:'Users'}
             ]
 		}
@@ -28,7 +29,7 @@
 		# 	{
 		# 		template: 'adminCollectionWidget'
 		# 		data:
-		# 			collection: 'Posts'
+		# 			collection: 'Courses'
 		# 			class: 'col-lg-3 col-xs-6'
 		# 	}
 		# 	{
