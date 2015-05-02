@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row" id="champion-messages">
 			<div class="col-md-3">
-				{{> add}}
+
 				{{> favorites}}
 			</div>
 			<div class="col-md-9">
@@ -19,7 +19,7 @@
 				<h3 class="panel-title">{{_ "add_post"}}</h3>
 			</div>
 			<div class="panel-body">
-				{{#autoForm id="add" collection="Posts" type="insert"}}
+				{{#autoForm id="add" collection="Courses" type="insert"}}
 				{{> afQuickField name="title"}}
 				{{> afQuickField name="organization"}}
 				{{> afQuickField name="content"}}
@@ -38,13 +38,13 @@
 				<h3 class="panel-title">{{_ "add_post_modal"}}</h3>
 			</div>
 			<div class="panel-body">
-				<a href="#afModal" data-toggle="modal" class="btn btn-primary" collection="Posts" operation="insert" fields="title,content,picture">{{_ "add_post_modal_btn"}}</a>
+				<a href="#afModal" data-toggle="modal" class="btn btn-primary" collection="Courses" operation="insert" fields="title,content,picture">{{_ "add_post_modal_btn"}}</a>
 			</div>
 	</div>
 </template>
 
 <template name="posts">
-	{{#each orderByFavorites Posts}}
+	{{#each orderByFavorites Courses}}
 		<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
@@ -75,10 +75,10 @@
 							<br>
 							{{#if $eq owner User._id}}
 							<small>
-								{{#afModal title="Update post" omitFields="createdAt,updatedAt,owner" class="text-primary" collection="Posts" operation="update" doc=_id}}
+								{{#afModal title="Update post" omitFields="createdAt,updatedAt,owner" class="text-primary" collection="Courses" operation="update" doc=_id}}
 									<i class="fa fa-pencil" buttonContent="Edit post"></i> {{_ "edit_post"}}
 								{{/afModal}}
-								{{#afModal title="Delete post" class="text-danger" collection="Posts" operation="remove" doc=_id}}
+								{{#afModal title="Delete post" class="text-danger" collection="Courses" operation="remove" doc=_id}}
 									<i class="fa fa-times" buttonContent="Edit post"></i> {{_ "delete"}}
 								{{/afModal}}
 							</small>
@@ -96,14 +96,14 @@
 </template>
 
 <template name="favorites">
-	{{#if Favorites 'Posts'}}
+	{{#if Favorites 'Courses'}}
 	<div class="panel panel-default">
 		<div class="panel-heading">
-				<h3 class="panel-title">Enroll</h3>
+				<h3 class="panel-title">Enrollment</h3>
 		</div>
 		<div class="panel-body">
 			<ul>
-			{{#each Favorites 'Posts'}}
+			{{#each Favorites 'Courses'}}
 				<li>
 					<a>{{title}}</a>
 				</li>

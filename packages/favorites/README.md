@@ -24,7 +24,7 @@ e.g.
         Meteor.subscribe 'favorites'
       ]
     data: ->
-      Posts: Posts.find().fetch()
+      Courses: Courses.find().fetch()
 ```
 3) Add the `favoriteButton` template to your templates, passing the `_id` of the doc as the parameter
 ```

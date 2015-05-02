@@ -6,7 +6,7 @@ ProfilePictures.allow
 	download: (userId)->
 		true
 
-Posts.allow
+Courses.allow
 	insert: (userId, doc) ->
 		userId == doc.owner
 	update: (userId, doc, fields, modifier) ->

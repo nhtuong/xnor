@@ -1,5 +1,5 @@
 <template name="commentForm">
-    {{#autoForm collection="Comments" id="commentForm" type="insert" commentDocId=_id}}
+    {{#autoForm collection="Asks" id="commentForm" type="insert" commentDocId=_id}}
       {{> afQuickField name='content' id='content' rows=2}}
     <button type="submit" doc="{{_id}}" class="btn btn-primary btn-sm">Ask</button>
     {{#if cancelButton}}

@@ -1,6 +1,6 @@
-@Posts = new Meteor.Collection('posts');
+@Courses = new Meteor.Collection('posts');
 
-Schemas.Posts = new SimpleSchema
+Schemas.Courses = new SimpleSchema
 	title:
 		type:String
 		label: 'Title'
@@ -19,7 +19,7 @@ Schemas.Posts = new SimpleSchema
 			
 	video:
 		type: String
-		label: 'Video'
+		label: 'Video (Youtube ID, i.e. eW3gMGqcZQc)'
 		max: 60
 		
 	widget:
@@ -60,4 +60,4 @@ Schemas.Posts = new SimpleSchema
 					label: user.emails[0].address
 					value: user._id
 
-Posts.attachSchema(Schemas.Posts)
+Courses.attachSchema(Schemas.Courses)

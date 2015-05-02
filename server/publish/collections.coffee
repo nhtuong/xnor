@@ -1,5 +1,5 @@
 Meteor.publish 'posts', ->
-	Posts.find()
+	Courses.find()
 
 Meteor.publish 'attachments', ->
 	Attachments.find()

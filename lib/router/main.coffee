@@ -21,7 +21,7 @@ Router.map ->
           Router.go url
         @next()
     data: ->
-      Posts: Posts.find({},{sort: {createdAt: -1}}).fetch()
+      Courses: Courses.find({},{sort: {createdAt: -1}}).fetch()
   @route "profile",
     path: "/profile"
     waitOn: ->

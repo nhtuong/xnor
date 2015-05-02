@@ -1,3 +1,3 @@
-Comments.allow
+Asks.allow
 	insert: (userId, doc) ->
 		doc.owner == userId
