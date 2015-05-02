@@ -1,7 +1,7 @@
 <template name="commentForm">
     {{#autoForm collection="Asks" id="commentForm" type="insert" commentDocId=_id}}
       {{> afQuickField name='content' id='content' rows=2}}
-    <button type="submit" doc="{{_id}}" class="btn btn-primary btn-sm">Ask</button>
+    <button type="submit" doc="{{_id}}" class="btn btn-primary btn-sm">Submit</button>
     {{#if cancelButton}}
     <a class="btn-cancel-comment">Cancel</a>
     {{/if}}
@@ -13,7 +13,7 @@
         <hr/>
         {{> commentForm _id=_id cancelButton=true}}
     {{else}}
-        <button class="btn btn-primary btn-sm btn-comment" doc="{{_id}}">Ask</button>
+        <button class="btn btn-primary btn-sm btn-comment" doc="{{_id}}"><i class="fa fa-question-circle"></i> Q&A</button>
     {{/if}}
 </template>
 

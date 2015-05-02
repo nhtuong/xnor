@@ -52,6 +52,7 @@
 						<span class="pull-right">
 							<i class="fa fa-users"></i> {{favoriteCount _id}}
 							<i class="fa fa-question-circle"></i> {{commentCount _id}}
+							<i class="fa fa-server"></i> {{xblockCount _id}}
 						</span>
 					</h3>
 				</div>
@@ -89,6 +90,10 @@
 				<div class="panel-footer">
 					{{> favoriteButton _id=_id}}
 					{{> commentFormToggle }}
+					{{#if $eq owner User._id}}
+						{{> xblockFormToggle }}
+					{{/if}}
+					{{> xblocks}}
 					{{> comments}}
 				</div>
 		</div>

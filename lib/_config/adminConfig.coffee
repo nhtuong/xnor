@@ -23,6 +23,18 @@
               {label:'User',name:'owner',collection:'Users'}
             ]
 		}
+		Xblocks: {
+			color: 'green'
+			icon: 'server'
+			auxCollections: ['Courses']
+			tableColumns: [
+              {label: 'Content';name:'content'}
+
+              {label:'Course';name:'doc',collection: 'Courses',collection_property:'title'}
+              {label:'User',name:'owner',collection:'Users'}
+            ]
+		}	
+		
 	dashboard:
 		homeUrl: '/dashboard'
 		# widgets: [

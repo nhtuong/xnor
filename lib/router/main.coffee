@@ -9,6 +9,7 @@ Router.map ->
         Meteor.subscribe 'posts'
         Meteor.subscribe 'favorites'
         Meteor.subscribe 'comments'
+        Meteor.subscribe 'xblocks'
         Meteor.subscribe 'attachments'
       ]
     onBeforeAction: ->

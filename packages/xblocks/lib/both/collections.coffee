@@ -1,6 +1,6 @@
-@Asks = new Meteor.Collection 'comments'
+@Xblocks = new Meteor.Collection 'xblocks'
 
-Schemas.Asks = new SimpleSchema
+Schemas.Xblocks = new SimpleSchema
 	doc:
 		type:String
 		regEx: SimpleSchema.RegEx.Id
@@ -22,7 +22,7 @@ Schemas.Asks = new SimpleSchema
 
 	content:
 		type: String
-		label: 'Q&A'
+		label: 'Xblock (iFrame)'
 
 
-Asks.attachSchema(Schemas.Asks)
+Xblocks.attachSchema(Schemas.Xblocks)
